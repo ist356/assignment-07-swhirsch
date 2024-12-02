@@ -21,6 +21,9 @@ def tullyscraper(playwright: Playwright) -> None:
             print(f"  menu item: {extracted_item.name}")
             extracted_items.append(extracted_item.to_dict())
 
+    df = pd.DataFrame(extracted_items)
+    df.to_csv("cache/tullys_menu.csv", index=False)    
+
     
     context.close()
     browser.close()
