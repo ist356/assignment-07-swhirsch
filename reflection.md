@@ -24,3 +24,6 @@ Examples:
 `--- Reflection Below This Line ---`
 
 Through Assignment 7, I practiced webscraping, cleaning scraped data, and more. In MenuItemExtractor.py, I practice conditional importing of data and the cleaning/modification of scraped data. These are vital skills to know when scraping data from websites, which tend to vary in formating. In tully_scraper.py, I scrape data from the Tully's wesbite, and ensure the proper data from the website is being exported to VSCode. 
+
+
+In Assignment 7 I practiced webscraping data and cleaning newly scraped data for analysis of information. In MenuItemExtractor.py, I practiced importing data with conditions and cleaning the new data. These skills are very important, as data scrapped from the web tend to hold different formings. In tully_scraper.py, I scraped data from the Tully's website to ensure the menu was being properly transported into VScode. 

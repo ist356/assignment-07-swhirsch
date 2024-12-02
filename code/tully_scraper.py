@@ -13,12 +13,12 @@ def tullyscraper(playwright: Playwright) -> None:
     extracted_items = []
     for title in page.query_selector_all("h3.foodmenu__menu-section-title"):
         title_text = title.inner_text()
-        print("menu selection:", title_text) 
+        print("MENU SECTION:", title_text) 
         row = title.query_selector("~ *").query_selector("~ *")
         for item in row.query_selector_all("div.foodmenu__menu-item"):
             item_text = item.inner_text()
             extracted_item = extract_menu_item(title_text, item_text)
-            print(f"  menu item: {extracted_item.name}")
+            print(f"  MENU ITEM: {extracted_item.name}")
             extracted_items.append(extracted_item.to_dict())
 
     df = pd.DataFrame(extracted_items)
